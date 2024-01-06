@@ -1,8 +1,9 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <>
+      {/* <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
@@ -108,6 +109,79 @@ export default function Home() {
           </p>
         </a>
       </div>
-    </main>
-  )
+    </main> */}
+
+      <>
+        <div className="bg-red-900 text-white flex items-center justify-center">
+          <p className="uppercase text-xs tracking-widest text-center px-4 py-3">
+            livraison offerte en point relais mondial relay en france
+            métropolitaine
+          </p>
+        </div>
+        <div className="flex items-center bg-slate-900 justify-center space-x-4">
+          <Image
+            src={"/MauiSafetyCheck.png"}
+            width={100}
+            height={250}
+            alt="Mechanic Shop Maui"
+          />
+          <a>Safety Check</a>
+          <a>Contact</a>
+          <a>About</a>
+        </div>
+
+        <div
+          style={{
+            position: "relative",
+            height: "60vh",
+            width: "100%",
+            clipPath: "inset(0 0 0 0)",
+          }}
+        >
+          <div
+            style={{
+              position: "fixed",
+              height: "100%",
+              width: "100%",
+              left: "0",
+              top: "0",
+            }}
+          >
+            <Image
+              src="https://images.unsplash.com/photo-1601942683467-990eb4b69224?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              layout="fill"
+              objectFit="cover"
+              sizes="100vw"
+              alt="Maui Safety Check Shop"
+            />
+            <p>Let's get you on the road</p>
+            <button>Request A Quote</button>
+          </div>
+        </div>
+
+        <div>
+          <h1>Maui Safety Check</h1>
+          <img></img>
+          <img></img>
+          <p>
+            Maui Safety Check is a leading brand in car design, manufacturing,
+            and maintenance. With our cutting-edge technology, we give you
+            tomorrow's vehicles, today!
+          </p>
+        </div>
+
+        <div>
+          <h1>Current Services</h1>
+        </div>
+
+        <div>
+          <h1>Client Testimonials</h1>
+        </div>
+
+        <div>
+          <h1>Get in touch</h1>
+        </div>
+      </>
+    </>
+  );
 }
